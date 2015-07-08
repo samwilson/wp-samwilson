@@ -23,7 +23,6 @@
 
 	<?php if (is_archive() && !isset($_GET['show-full'])) the_excerpt(); else the_content(); ?>
 
-	<?php the_posts_pagination() ?>
 	</div><!-- .post-body -->
 
 	<?php wp_link_pages() ?>

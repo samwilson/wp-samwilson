@@ -91,9 +91,12 @@
 	<li class="links">
 		<h3>Links</h3>
 		<ul>
-		<?php wp_list_bookmarks( array(
-			'categorize' => 1, 'title_before' => '<h4>', 'title_after' => '</h4>',
-		) ) ?>
+			<?php wp_list_bookmarks( array(
+				'show_images' => false,
+				'categorize' => 1,
+				'title_before' => '<h4>',
+				'title_after' => '</h4>',
+			) ) ?>
 			<li>
 				<h4>Stack Exchange:</h4>
 				<ul class="blogroll">

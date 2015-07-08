@@ -35,7 +35,8 @@
 
 		<div class="row">
 			<div class="small-12 large-9 columns">
-				<?php get_template_part( 'main' ); ?> 
+				<?php get_template_part( 'main' ) ?>
+				<?php the_posts_pagination( array( 'screen_reader_text' => 'Go to page:' ) ) ?>
 			</div>
 			<div class="small-12 large-3 columns">
 				<?php get_sidebar() ?>

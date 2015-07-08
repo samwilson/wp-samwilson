@@ -27,6 +27,7 @@ header .menu .menu-item-type-custom a { color:#090 }
 #sidebar p { text-align:justify; line-height:1em; margin:0.2em 0 }
 #sidebar .links h4 { margin:0 }
 #sidebar .links .blogroll { margin-left:1em }
+#sidebar .tags p { text-align:left }
 #sidebar .tags a {
 	display: inline-block;
 	font-weight: normal;
@@ -124,6 +125,7 @@ article.format-status.is-not-single { border-left:10px solid #060; padding-left:
 .post.format-status.is-not-single .info { display:none }
 .post.format-status.is-not-single p { margin:0 }
 
+nav.navigation.pagination * { font-size:1em; display:inline }
 
 
 footer { text-align:center; font-size:70%; border-top: 2px solid #060; padding:1.4em; line-height:80% }
