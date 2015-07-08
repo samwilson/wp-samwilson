@@ -1,0 +1,147 @@
+/*
+ Theme Name:   Sam Wilson Fifteen
+ Theme URI:    http://samwilson.id.au/samwilson15
+ Description:  Sam's new theme for 2015
+ Author:       Sam Wilson
+ Author URI:   http://samwilson.id.au/
+ Version:      15.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         green, two-columns, right-sidebar
+ Text Domain:  samwilson15
+*/
+
+header em { display:block; border-top:4.5em solid #060 }
+header .menu ul { list-style-type:none }
+header .menu ul li { display:inline-block; margin-left:1em }
+header .menu .menu-item-type-custom a { color:#090 }
+
+#sidebar { list-style-type:none; margin:0 }
+#sidebar * { font-size:10pt }
+#sidebar li { margin:1em 0 }
+#sidebar h3 { margin:0; background-color:#060; color:white; font-size:1em; padding:0.2em }
+#sidebar dt { font-weight:normal; margin:0 }
+#sidebar dd { margin:0 0 0 1em }
+#sidebar ul { list-style-type:none; margin:0 }
+#sidebar ul li { margin:0 }
+#sidebar p { text-align:justify; line-height:1em; margin:0.2em 0 }
+#sidebar .links h4 { margin:0 }
+#sidebar .links .blogroll { margin-left:1em }
+#sidebar .tags a {
+	display: inline-block;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: auto;
+	padding: 0.22222rem 0.44444rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap; background-color: #e7e7e7; color: #333333 }
+
+a {color:#060}
+a:hover, #new-post-link a:hover {color:red}
+
+
+.osm iframe { width:100%; height:20em }
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail { max-width: 100%; height: auto }
+
+.alignright { float: right; margin: 0.4em 0 1.6em 1.6em }
+.alignleft { float: left; margin: 0.4em 1.6em 1.6em 0; }
+.aligncenter { margin-right: auto; margin-left: auto }
+
+.wp-caption { 	margin-bottom: 1.6em; max-width: 100% }
+.wp-caption img[class*="wp-image-"] { display: block; margin: 0 }
+.wp-caption-text {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	font-size:smaller;
+	text-align:center;
+}
+.gallery { margin-bottom: 1.6em }
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item { max-width: 50%; }
+.gallery-columns-3 .gallery-item { max-width: 33.33%; }
+.gallery-columns-4 .gallery-item { max-width: 25% }
+.gallery-columns-5 .gallery-item { max-width: 20%; }
+.gallery-columns-6 .gallery-item { max-width: 16.66%;}
+.gallery-columns-7 .gallery-item { max-width: 14.28%;}
+.gallery-columns-8 .gallery-item { max-width: 12.5%; }
+.gallery-columns-9 .gallery-item { 	max-width: 11.11%; }
+.gallery-icon img { margin: 0 auto; }
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {  display: none; }
+
+article .header { background-color:#060; color:white; padding:3px; margin:0 }
+article .header h2 {text-align:right; font-size:1em; margin:0}
+article .header a {text-decoration:none; color:white }
+article .header .category {text-align: right; font-size: 0.7em; margin:0}
+article .info {clear:both; font-size:smaller; border:1px solid #ddd;
+			 margin:auto; padding:3px; text-align:left; border-bottom:10px solid #060;
+			 margin-bottom:3em; border-left:1px solid #060; border-right:1px solid #060;
+			 border-top:0}
+article .header-bottom {border-color:#060; border-style:solid; border-width:0 1px; margin:0 0 1em 0; height:1em}
+
+article .info a {text-decoration:none}
+article .attachment {text-align:center}
+
+article.sticky { background-color:#eeefee }
+
+
+article.format-status.is-not-single { border-left:10px solid #060; padding-left:1em; margin: 1.3em 0 3em 0;
+							   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+							   color:#333;
+}
+.post.format-status.is-not-single .header { background-color:white; padding:0 }
+.post.format-status.is-not-single h2 { text-align:left; font-style:normal;
+	font-size:smaller; font-family:inherit }
+.post.format-status.is-not-single h2 a { color:#ddd }
+.post.format-status.is-not-single:hover h2 a { color:#060 }
+.post.format-status.is-not-single .header-bottom { display:none }
+.post.format-status.is-not-single .category { display:none }
+.post.format-status.is-not-single .info { display:none }
+.post.format-status.is-not-single p { margin:0 }
+
+
+
+footer { text-align:center; font-size:70%; border-top: 2px solid #060; padding:1.4em; line-height:80% }
+footer ul {list-style-type:none; margin:0; padding:0}
+footer ul li {float:left; width:25%; text-align:center; margin:0; padding:0}
+footer img {border:0}
+
+
+.comments {border-style: solid; border-color:#ddd; border-width:1px 1px 10px 1px;
+		   margin:1em 0; padding:0}
+.comments h2 { text-align:left; background-color:#ddd; margin:0; padding:0 0.4em; font-variant:small-caps; color:#777 }
+.comment-list {margin:4px; padding:0; list-style-type:none }
+.comment-list li {padding:4px; clear:both; margin:4px 2px; min-height:100px}
+.comment-list li.bypostauthor { background-color:#eee; border:1px solid #ddd }
+.comment-list li.bypostauthor .comment-author { background-color:white }
+.comment-list .comment-author { float:left; margin-right:0.6em; width:110px; line-height:80% }
+.comment-list .comment-author .fn { font-size:smaller }
+.comment-list .comment-author img { display:block; margin:auto }
+.comment-list .comment-author .says { display:none }
+.comment-list .reply { clear:both; text-align:right }
+.comment-respond { margin:10px }
