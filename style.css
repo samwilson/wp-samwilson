@@ -17,27 +17,24 @@ header .menu ul li { display:inline-block; margin-left:1em }
 header .menu .menu-item-type-custom a { color:#090 }
 
 #sidebar { list-style-type:none; margin:0 }
-#sidebar * { font-size:10pt }
+#sidebar * { font-size:10pt; line-height:1.1em }
 #sidebar li { margin:1em 0 }
 #sidebar h3 { margin:0; background-color:#060; color:white; font-size:1em; padding:0.2em }
 #sidebar dt { font-weight:normal; margin:0 }
 #sidebar dd { margin:0 0 0 1em }
 #sidebar ul { list-style-type:none; margin:0 }
 #sidebar ul li { margin:0 }
-#sidebar p { text-align:justify; line-height:1em; margin:0.2em 0 }
+#sidebar p { text-align:justify; margin:0.2em 0 }
 #sidebar .links h4 { margin:0 }
 #sidebar .links .blogroll { margin-left:1em }
 #sidebar .tags p { text-align:left }
-#sidebar .tags a {
-	display: inline-block;
-	font-weight: normal;
-	line-height: 1;
-	margin-bottom: auto;
+#sidebar .tags a { display: inline-block; font-weight: normal;
+	line-height: 1; margin-bottom: auto;
 	padding: 0.22222rem 0.44444rem;
 	position: relative;
 	text-align: center;
-	text-decoration: none;
-	white-space: nowrap; background-color: #e7e7e7; color: #333333 }
+	text-decoration: none; background-color: #e7e7e7; color: #333333 }
+#sidebar .tags a:hover { color:#060 }
 
 a {color:#060}
 a:hover, #new-post-link a:hover {color:red}
@@ -53,7 +50,7 @@ a:hover, #new-post-link a:hover {color:red}
 
 .alignright { float: right; margin: 0.4em 0 1.6em 1.6em }
 .alignleft { float: left; margin: 0.4em 1.6em 1.6em 0; }
-.aligncenter { margin-right: auto; margin-left: auto }
+.aligncenter { display:block; margin-right:auto; margin-left:auto }
 
 .wp-caption { 	margin-bottom: 1.6em; max-width: 100% }
 .wp-caption img[class*="wp-image-"] { display: block; margin: 0 }
@@ -111,9 +108,9 @@ article .attachment {text-align:center}
 article.sticky { background-color:#eeefee }
 
 
-article.format-status.is-not-single { border-left:10px solid #060; padding-left:1em; margin: 1.3em 0 3em 0;
-							   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-							   color:#333;
+article.format-status.is-not-single { border-left:10px solid #060;
+	padding-left:1em; margin: 1.3em 0 3em 0; color:#333;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 .post.format-status.is-not-single .header { background-color:white; padding:0 }
 .post.format-status.is-not-single h2 { text-align:left; font-style:normal;
@@ -147,3 +144,4 @@ footer img {border:0}
 .comment-list .comment-author .says { display:none }
 .comment-list .reply { clear:both; text-align:right }
 .comment-respond { margin:10px }
+textarea#comment { width:100% }

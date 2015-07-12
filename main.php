@@ -31,7 +31,6 @@
 		<?php comments_popup_link('[No comments]', '[One comment]', '[% comments]' ,'', '') ?>
 		<?php the_tags('[Keywords: ', ', ', ']') ?>
 		<a href='<?php the_permalink() ?>'>[Permanent link]</a>
-		<?php edit_post_link('[Edit]','','') ?>
 	</p>
 
 	<?php if (is_single() || is_page()): ?>

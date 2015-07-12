@@ -81,6 +81,7 @@
 		<h3>Index</h3>
 		<p><em>In descending order of frequency of use.</em>
 			<?php foreach (get_tags('orderby=count&order=desc') as $tag): ?>
+			<?php if ( $tag->count < 2 ) continue; ?>
 			<a href="<?php echo site_url('/tag/'.$tag->slug) ?>" title="Count: <?php echo $tag->count ?>">
 				<?php echo $tag->name ?>
 			</a>
