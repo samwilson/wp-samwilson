@@ -39,6 +39,17 @@ header .menu .menu-item-type-custom a { color:#090 }
 a {color:#060}
 a:hover, #new-post-link a:hover {color:red}
 
+address { font-size:smaller; border:1px solid #cfcffb; padding:3px }
+
+code { font-size:smaller }
+var { background-color:#fbedf0; border: 1px solid #fccbbe; font-style:normal;
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-weight: normal; font-size:smaller; padding: 0.125rem 0.3125rem 0.0625rem; }
+blockquote cite { text-align:right; margin-top:0.5em }
+
+table { border:2px solid black; border-width:2px 0; border-collapse:collapse; font-size:92% }
+table th { border-bottom:1px solid black }
+table td { padding:0 0.2em }
 
 .osm iframe { width:100%; height:20em }
 
@@ -52,8 +63,8 @@ a:hover, #new-post-link a:hover {color:red}
 .alignleft { float: left; margin: 0.4em 1.6em 1.6em 0; }
 .aligncenter { display:block; margin-right:auto; margin-left:auto }
 
-.wp-caption { 	margin-bottom: 1.6em; max-width: 100% }
-.wp-caption img[class*="wp-image-"] { display: block; margin: 0 }
+.wp-caption { margin-bottom: 1.6em; max-width:100% }
+.wp-caption img[class*="wp-image-"] { display:block; margin:0 }
 .wp-caption-text {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
@@ -135,9 +146,10 @@ footer img {border:0}
 		   margin:1em 0; padding:0}
 .comments h2 { text-align:left; background-color:#ddd; margin:0; padding:0 0.4em; font-variant:small-caps; color:#777 }
 .comment-list {margin:4px; padding:0; list-style-type:none }
-.comment-list li {padding:4px; clear:both; margin:4px 2px; min-height:100px}
-.comment-list li.bypostauthor { background-color:#eee; border:1px solid #ddd }
-.comment-list li.bypostauthor .comment-author { background-color:white }
+.comment-list > li {padding:4px; clear:both; margin:4px 2px; min-height:100px}
+.comment-list > li.bypostauthor { background-color:#eee; border:1px solid #ddd }
+.comment-list > li.bypostauthor .comment-author { background-color:white }
+.comment-list ul { padding-left:2em }
 .comment-list .comment-author { float:left; margin-right:0.6em; width:110px; line-height:80% }
 .comment-list .comment-author .fn { font-size:smaller }
 .comment-list .comment-author img { display:block; margin:auto }

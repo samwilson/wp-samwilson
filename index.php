@@ -45,11 +45,11 @@
 
 		<footer class="row">
 			<ul>
-				<li class="columns small-12 large-3">
+				<li class="columns small-12 large-2">
 					&copy; 2003&ndash;<?php echo date('Y')?>
 				</li>
 
-				<li class="columns small-12 large-3">
+				<li class="columns small-12 large-5">
 					<div id="hcard-Sam-Wilson" class="vcard">
 						<a class="url fn" href="http://samwilson.id.au/">Sam Wilson</a>
 						&lt;<a class="email" title="Email me" href="mailto:sam@samwilson.id.au">sam@samwilson.id.au</a>&gt;
@@ -60,7 +60,7 @@
 					</div>
 				</li>
 
-				<li class="columns small-12 large-3">
+				<li class="columns small-12 large-2">
 					<?php if (is_user_logged_in()) echo '<a href="/wp-admin">Admin</a> | ' ?><?php wp_loginout() ?>
 				</li>
 
