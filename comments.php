@@ -8,7 +8,7 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
-			<?php echo get_comments_number() ?> comments
+			<?php echo get_comments_number() ?> comment<?php if (get_comments_number()!=1) echo 's'; ?>
 		</h2>
 
 		<ol class="comment-list">

@@ -113,9 +113,9 @@ article .info {clear:both; font-size:smaller; border:1px solid #ddd;
 			 border-top:0}
 article .header-bottom {border-color:#060; border-style:solid; border-width:0 1px; margin:0 0 1em 0; height:1em}
 
-article .info a {text-decoration:none}
-article .attachment {text-align:center}
-
+article .info a { text-decoration:none }
+article .attachment { text-align:center }
+article .post-body { text-align:justify }
 article.sticky { background-color:#eeefee }
 
 
@@ -144,10 +144,10 @@ footer img {border:0}
 
 .comments {border-style: solid; border-color:#ddd; border-width:1px 1px 10px 1px;
 		   margin:1em 0; padding:0}
-.comments h2 { text-align:left; background-color:#ddd; margin:0; padding:0 0.4em; font-variant:small-caps; color:#777 }
+.comments h2 { text-align:left; background-color:#efefef; margin:0; padding:0 0.4em; font-variant:small-caps; color:#777; border-bottom:1px solid #ddd }
 .comment-list {margin:4px; padding:0; list-style-type:none }
-.comment-list > li {padding:4px; clear:both; margin:4px 2px; min-height:100px}
-.comment-list > li.bypostauthor { background-color:#eee; border:1px solid #ddd }
+.comment-list > li {padding:4px; clear:both; margin:4px 2px; min-height:150px}
+.comment-list > li.bypostauthor { background-color:#F0FFF0; border:1px solid #ddd }
 .comment-list > li.bypostauthor .comment-author { background-color:white }
 .comment-list ul { padding-left:2em }
 .comment-list .comment-author { float:left; margin-right:0.6em; width:110px; line-height:80% }
