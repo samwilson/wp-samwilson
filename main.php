@@ -1,7 +1,11 @@
-<?php if (have_posts()): while (have_posts()): the_post() ?>
+<?php if( ! have_posts() ): ?>
+
+<p>The thing for which you seek can not be found this way.</p>
+
+<?php else: while ( have_posts() ) : the_post(); ?>
 
 <article <?php $single = is_single() ? 'is-single' : 'is-not-single'; post_class($single) ?>>
-	<div class="header">
+	<header>
 		<h2>
 			<a href='<?php the_permalink(); ?>' title="Permanent link">
 				<strong class="title"><?php echo $post->post_title; ?></strong>
@@ -12,7 +16,7 @@
 			</a>
 		</h2>
 		<p class="category"><em><?php the_category(' '); ?></em></p>
-	</div>
+	</header>
 	<p class="header-bottom"></p>
 
 	<div class="post-body">
@@ -33,14 +37,14 @@
 		<a href='<?php the_permalink() ?>'>[Permanent link]</a>
 	</p>
 
-	<?php if (is_single() || is_page()): ?>
+	<?php if (is_single()): ?>
 		<div class="comments">
 			<?php $withcomments=1; comments_template(); ?>
 		</div><!-- end div.comments -->
 	<?php endif; ?>
 
 	<!--
-	<?php trackback_rdf(); ?>
+	<?php trackback_rdf() ?>
 	-->
 </article>
 

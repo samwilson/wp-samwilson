@@ -1,43 +1,122 @@
 /*
- Theme Name:   Sam Wilson Fifteen
- Theme URI:    http://samwilson.id.au/samwilson15
- Description:  Sam's new theme for 2015
+ Theme Name:   SamWilson
+ Theme URI:    https://github.com/samwilson/wp-samwilson.git
+ Description:  Sam's theme
  Author:       Sam Wilson
  Author URI:   http://samwilson.id.au/
  Version:      15.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         green, two-columns, right-sidebar
- Text Domain:  samwilson15
+ Text Domain:  samwilson
 */
 
-header em { display:block; border-top:4.5em solid #060 }
-header .menu ul { list-style-type:none }
-header .menu ul li { display:inline-block; margin-left:1em }
-header .menu .menu-item-type-custom a { color:#090 }
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-#sidebar { list-style-type:none; margin:0 }
-#sidebar * { font-size:10pt; line-height:1.1em }
-#sidebar li { margin:1em 0 }
-#sidebar h3 { margin:0; background-color:#060; color:white; font-size:1em; padding:0.2em }
-#sidebar dt { font-weight:normal; margin:0 }
-#sidebar dd { margin:0 0 0 1em }
-#sidebar ul { list-style-type:none; margin:0 }
-#sidebar ul li { margin:0 }
-#sidebar p { text-align:justify; margin:0.2em 0 }
-#sidebar .links h4 { margin:0 }
-#sidebar .links .blogroll { margin-left:1em }
-#sidebar .tags p { text-align:left }
-#sidebar .tags a { display: inline-block; font-weight: normal;
+
+
+/* Main site layout. */
+header { text-align:center; margin-bottom:4em }
+header nav { font-variant:small-caps }
+main { display:inline-block; width:60% }
+main .main-inner { margin:0 2em }
+aside { width:20%; list-style-type:none }
+aside ol { margin:0 1em }
+aside#right-sidebar { float:right }
+aside#left-sidebar { float:left }
+footer { clear:both; width:100%; margin:1em 0 4em 0 }
+
+
+/* Fonts and colours. */
+body { line-height:1.6; font-size:large; font-family:serif }
+a { color:#060; text-decoration:none }
+strong { font-weight:bolder }
+a:hover,
+#new-post-link a:hover { color:red; text-decoration:underline }
+header nav a.external { color:#090 }
+header h1 { font-size:2.5em; border-top:4em solid #060 }
+aside { text-align:left }
+aside#right-sidebar li.microblog .date { font-weight:bolder }
+aside#right-sidebar li.microblog .comment { visibility:hidden; float:right }
+aside#right-sidebar li.microblog a:hover .comment { visibility:visible; color:green }
+
+
+aside a.anchor-list { color:black; display:block; border-bottom:1px solid #ccc; padding:0.5em 0; text-decoration:none }
+aside a.anchor-list {  }
+aside a.anchor-list:hover { background-color:#efefef }
+
+/* Common elements */
+img { max-width:100% }
+
+
+/* Site header style */
+header nav ul { list-style-type:none }
+header nav ul li { display:inline-block; margin-left:1em }
+header nav li.page_item.page_item_has_children ol { display:none }
+
+
+
+/* Sidebar style */
+aside * { font-size:10pt; line-height:1.1em }
+aside li { margin-bottom:2em }
+aside h3 { margin:0; background-color:#060; color:white; font-size:1.2em; padding:0.4em; margin-bottom:0.2em }
+aside dt { font-weight:normal; margin:0 }
+aside dd { margin:0 0 0 1em }
+aside ul { list-style-type:none; margin:0 }
+aside ul li { margin:0 }
+aside p { margin:0 0.2em 0 0 }
+aside .links h4 { margin:0 }
+aside .links .blogroll { margin-left:1em }
+aside .tags p { text-align:left }
+aside .tags a { display: inline-block; font-weight: normal;
 	line-height: 1; margin-bottom: auto;
 	padding: 0.22222rem 0.44444rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none; background-color: #e7e7e7; color: #333333 }
-#sidebar .tags a:hover { color:#060 }
+aside .tags a:hover { color:#060 }
 
-a {color:#060}
-a:hover, #new-post-link a:hover {color:red}
 
 address { font-size:smaller; border:1px solid #cfcffb; padding:3px }
 
@@ -52,6 +131,8 @@ table th { border-bottom:1px solid black }
 table td { padding:0 0.2em }
 
 .osm iframe { width:100%; height:20em }
+
+.screen-reader-text { display:none }
 
 .size-auto, 
 .size-full,
@@ -103,14 +184,14 @@ table td { padding:0 0.2em }
 .gallery-columns-8 .gallery-caption,
 .gallery-columns-9 .gallery-caption {  display: none; }
 
-article .header { background-color:#060; color:white; padding:3px; margin:0 }
-article .header h2 {text-align:right; font-size:1em; margin:0}
-article .header a {text-decoration:none; color:white }
-article .header .category {text-align: right; font-size: 0.7em; margin:0}
+article { margin-bottom:3em }
+article header { background-color:#060; color:white; padding:3px; margin:0 }
+article header h2 {text-align:right; font-size:1em; margin:0}
+article header a {text-decoration:none; color:white }
+article header .category {text-align: right; font-size: 0.7em; margin:0}
 article .info {clear:both; font-size:smaller; border:1px solid #ddd;
-			 margin:auto; padding:3px; text-align:left; border-bottom:10px solid #060;
-			 margin-bottom:3em; border-left:1px solid #060; border-right:1px solid #060;
-			 border-top:0}
+			margin:auto; padding:3px; text-align:left; border-bottom:10px solid #060;
+			border-left:1px solid #060; border-right:1px solid #060; border-top:0}
 article .header-bottom {border-color:#060; border-style:solid; border-width:0 1px; margin:0 0 1em 0; height:1em}
 
 article .info a { text-decoration:none }
@@ -118,20 +199,31 @@ article .attachment { text-align:center }
 article .post-body { text-align:justify }
 article.sticky { background-color:#eeefee }
 
+article ul,
+article ol { margin-left:1.5em }
+article ul { list-style-type:disc }
+article ul ul { list-style-type:square }
+article ol { list-style-type:arabic }
+article ol ol { list-style-type:lower-roman }
 
-article.format-status.is-not-single { border-left:10px solid #060;
-	padding-left:1em; margin: 1.3em 0 3em 0; color:#333;
+article h3 { color:#060; font-size:1.1em; border-bottom:1px solid #060; margin-top:1em }
+
+body.single-format-image { background-color:black }
+article.format-image img { }
+
+
+article.format-status.is-not-single { border-left:10px solid #060; padding-left:1em; color:#333;
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
-.post.format-status.is-not-single .header { background-color:white; padding:0 }
-.post.format-status.is-not-single h2 { text-align:left; font-style:normal;
+article.format-status.is-not-single header { background-color:white; padding:0 }
+article.format-status.is-not-single h2 { text-align:left; font-style:normal;
 	font-size:smaller; font-family:inherit }
-.post.format-status.is-not-single h2 a { color:#ddd }
-.post.format-status.is-not-single:hover h2 a { color:#060 }
-.post.format-status.is-not-single .header-bottom { display:none }
-.post.format-status.is-not-single .category { display:none }
-.post.format-status.is-not-single .info { display:none }
-.post.format-status.is-not-single p { margin:0 }
+article.format-status.is-not-single h2 a { color:#ddd }
+article.format-status.is-not-single:hover h2 a { color:#060; text-decoration:none }
+article.format-status.is-not-single .header-bottom { display:none }
+article.format-status.is-not-single .category { display:none }
+article.format-status.is-not-single .info { display:none }
+article.format-status.is-not-single p { margin:0 }
 
 nav.navigation.pagination * { font-size:1em; display:inline }
 
@@ -157,3 +249,18 @@ footer img {border:0}
 .comment-list .reply { clear:both; text-align:right }
 .comment-respond { margin:10px }
 textarea#comment { width:100% }
+
+
+/***********************************************************************************************************************
+ * Mobile style.
+ */
+@media (max-width: 600px) {
+	body { margin:0.2em }
+	header h1 { font-size:x-large; border-top:0 }
+	header nav { display:none }
+	main { max-width:100%; width:100% }
+	main .main-inner { margin:0 }
+	aside { display:none }
+	footer .admin,
+	footer .feed { display:none }
+}

@@ -6,18 +6,20 @@ if (!isset($content_width)) {
 
 add_action('after_setup_theme', function() {
 	add_theme_support('automatic-feed-links');
-	add_theme_support('post-formats', array('status', 'quote', 'gallery', 'image', 'video', 'audio', 'link', 'aside', 'chat'));
+	add_theme_support('post-formats', array('status', 'quote', 'link'));
 	add_theme_support('post-thumbnails');
 	add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
 	add_theme_support('title-tag');
 });
 
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
 
 add_action('init', function () {
 	register_nav_menu('header-menu', 'Header Menu');
 });
 
-function samwilson15_recent_comments($howmany = '10') {
+function samwilson_recent_comments($howmany = '10') {
 	global $wpdb;
 	$sql = "SELECT comment_author, comment_author_url, comment_ID, comment_date, " .
 			"comment_post_ID FROM $wpdb->comments WHERE comment_approved = '1' " .
@@ -38,7 +40,7 @@ function samwilson15_recent_comments($howmany = '10') {
 
 add_filter('pre_option_link_manager_enabled', '__return_true');
 
-add_shortcode('samwilson15_archives', function() {
+add_shortcode('samwilson_archives', function() {
 	global $wpdb;
 	$request = "SELECT "
 			. "    ID, post_title, post_content, MONTHNAME(post_date) AS `month`,"
