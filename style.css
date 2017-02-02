@@ -101,6 +101,8 @@ header nav li.page_item.page_item_has_children ol { display:none }
 aside * { font-size:10pt; line-height:1.1em }
 aside li { margin-bottom:2em }
 aside h3 { margin:0; background-color:#060; color:white; font-size:1.2em; padding:0.4em; margin-bottom:0.2em }
+aside .microblog h3 { margin:0 }
+aside .recent-photos { text-align:center }
 aside dt { font-weight:normal; margin:0 }
 aside dd { margin:0 0 0 1em }
 aside ul { list-style-type:none; margin:0 }
@@ -117,18 +119,29 @@ aside .tags a { display: inline-block; font-weight: normal;
 	text-decoration: none; background-color: #e7e7e7; color: #333333 }
 aside .tags a:hover { color:#060 }
 
+em { font-style:italic }
 
 address { font-size:smaller; border:1px solid #cfcffb; padding:3px }
 
 code { font-size:smaller }
-var { background-color:#fbedf0; border: 1px solid #fccbbe; font-style:normal;
-    font-family: Consolas,"Liberation Mono",Courier,monospace;
+var, pre, code { background-color: #ecfcea; border: 1px solid #d8fbb2; font-style:normal;
+    font-family: Consolas,"Liberation Mono",Courier,monospace; line-height:1em;
     font-weight: normal; font-size:smaller; padding: 0.125rem 0.3125rem 0.0625rem; }
-blockquote cite { text-align:right; margin-top:0.5em }
+
+blockquote { border-left:0.5em solid #e8e8e8; padding-left:0.7em; font-size:smaller }
+blockquote cite { text-align:right; margin-top:0.5em; display:block; font-style:italic; font-size:smaller }
+
+sup, sub { font-size:0.6em }
+sup { vertical-align:super }
+sub { vertical-align:sub }
 
 table { border:2px solid black; border-width:2px 0; border-collapse:collapse; font-size:92% }
 table th { border-bottom:1px solid black }
 table td { padding:0 0.2em }
+
+dl { line-height:1.1em; margin:0.4em 0; font-size:smaller }
+dt { font-weight:bolder }
+dd { margin-left:3em }
 
 .osm iframe { width:100%; height:20em }
 
@@ -203,8 +216,12 @@ article ul,
 article ol { margin-left:1.5em }
 article ul { list-style-type:disc }
 article ul ul { list-style-type:square }
+article ul ul ul { list-style-type:circle }
 article ol { list-style-type:arabic }
-article ol ol { list-style-type:lower-roman }
+article ol ol { list-style-type:lower-latin }
+article ol ol ol { list-style-type:lower-roman }
+
+article p { margin:0.75em 0 0.2em 0 }
 
 article h3 { color:#060; font-size:1.1em; border-bottom:1px solid #060; margin-top:1em }
 
@@ -225,10 +242,12 @@ article.format-status.is-not-single .category { display:none }
 article.format-status.is-not-single .info { display:none }
 article.format-status.is-not-single p { margin:0 }
 
+nav.navigation.pagination { text-align:center }
 nav.navigation.pagination * { font-size:1em; display:inline }
+nav.navigation.pagination .page-numbers { display:inline-block; border:1px solid #efefef; min-width:2em }
 
 
-footer { text-align:center; font-size:70%; border-top: 2px solid #060; padding:1.4em; line-height:80% }
+footer { text-align:center; font-size:70%; border-top: 2px solid #060; padding:1.4em 0; line-height:1em }
 footer ul {list-style-type:none; margin:0; padding:0}
 footer ul li {float:left; width:25%; text-align:center; margin:0; padding:0}
 footer img {border:0}
@@ -242,10 +261,11 @@ footer img {border:0}
 .comment-list > li.bypostauthor { background-color:#F0FFF0; border:1px solid #ddd }
 .comment-list > li.bypostauthor .comment-author { background-color:white }
 .comment-list ul { padding-left:2em }
-.comment-list .comment-author { float:left; margin-right:0.6em; width:110px; line-height:80% }
+.comment-list .comment-author { float:left; margin-right:0.6em; width:110px; line-height:80%; text-align:center; font-size:smaller }
 .comment-list .comment-author .fn { font-size:smaller }
 .comment-list .comment-author img { display:block; margin:auto }
 .comment-list .comment-author .says { display:none }
+.comment-list .comment-edit-link { font-size:smaller }
 .comment-list .reply { clear:both; text-align:right }
 .comment-respond { margin:10px }
 textarea#comment { width:100% }
@@ -260,7 +280,8 @@ textarea#comment { width:100% }
 	header nav { display:none }
 	main { max-width:100%; width:100% }
 	main .main-inner { margin:0 }
+	article header .title-separator { display:block; font-size:xx-small }
+	article header .date { font-size:small }
 	aside { display:none }
-	footer .admin,
-	footer .feed { display:none }
+	footer { display:none }
 }

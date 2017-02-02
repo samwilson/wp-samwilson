@@ -29,7 +29,7 @@
 
 		<main>
 			<div class="main-inner"><?php get_template_part( 'main' ) ?></div>
-			<nav><?php the_posts_pagination( array( 'screen_reader_text' => 'Go to page:' ) ) ?></nav>
+			<?php the_posts_pagination( array( 'screen_reader_text' => 'Go to page:' ) ) ?>
 		</main>
 		<aside id="left-sidebar">
 			<?php get_sidebar('left') ?>
@@ -44,7 +44,7 @@
 
 				<li class="author">
 					<div id="hcard-Sam-Wilson" class="vcard">
-						<a class="url fn" href="http://samwilson.id.au/">Sam Wilson</a>
+						<a class="url fn" href="https://samwilson.id.au/">Sam Wilson</a>
 						&lt;<a class="email" title="Email me" href="mailto:sam@samwilson.id.au">sam@samwilson.id.au</a>&gt;
 						<div class="adr">
 							<span class="locality">Fremantle</span>, <span class="region">Western Australia</span>

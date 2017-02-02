@@ -4,7 +4,7 @@
 
 <?php else: while ( have_posts() ) : the_post(); ?>
 
-<article <?php $single = is_single() ? 'is-single' : 'is-not-single'; post_class($single) ?>>
+<article <?php $single = is_single() ? 'is-single' : 'is-not-single'; post_class($single) ?> id="post">
 	<header>
 		<h2>
 			<a href='<?php the_permalink(); ?>' title="Permanent link">

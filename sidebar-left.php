@@ -72,7 +72,7 @@
 	} ?>
 	<dt><em>Earlier</em></dt>
 	<dd>
-		<a href="<?php site_url('/archive-of-posts').$prev_month.$prev_year ?>">
+		<a href="<?php echo esc_url( home_url( 'archives' ) )."#$prev_month$prev_year" ?>">
 			View posts prior to <?php echo $prev_month.' '.$prev_year; ?>
 		</a>
 	</dd>
