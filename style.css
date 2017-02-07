@@ -86,8 +86,6 @@ aside a.anchor-list { color:black; display:block; border-bottom:1px solid #ccc; 
 aside a.anchor-list {  }
 aside a.anchor-list:hover { background-color:#efefef }
 
-/* Common elements */
-img { max-width:100% }
 
 
 /* Site header style */
@@ -212,6 +210,7 @@ article .attachment { text-align:center }
 article .post-body { text-align:justify }
 article.sticky { background-color:#eeefee }
 
+article img { max-width:100%; height:auto }
 article ul,
 article ol { margin-left:1.5em }
 article ul { list-style-type:disc }
