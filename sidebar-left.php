@@ -55,7 +55,7 @@
 	$now = gmdate("Y-m-d H:i:s",time());
 	$request = "SELECT ID, post_title, MONTHNAME(post_date) AS `month`, YEAR(post_date) AS `year` "
 		." FROM $wpdb->posts "
-		." WHERE post_status = 'publish' AND post_password = '' AND post_type='post' "
+		." WHERE post_status = 'publish' AND post_password = '' AND post_type='post' AND post_title!='' "
 		." ORDER BY post_date DESC LIMIT 15";
 	$posts = $wpdb->get_results($request);
 	$prev_month = '';
@@ -85,7 +85,8 @@
 
 	<li class="tags">
 		<h3>Index</h3>
-		<p><em>In descending order of frequency of use.</em>
+		<p class="description"><em>In descending order of frequency of use.</em></p>
+		<p>
 			<?php foreach (get_tags('orderby=count&order=desc') as $tag): ?>
 			<?php if ( $tag->count < 2 ) continue; ?>
 			<a href="<?php echo site_url('/tag/'.$tag->slug) ?>" title="Count: <?php echo $tag->count ?>">

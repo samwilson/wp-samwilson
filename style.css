@@ -109,11 +109,9 @@ aside p { margin:0 0.2em 0 0 }
 aside .links h4 { margin:0 }
 aside .links .blogroll { margin-left:1em }
 aside .tags p { text-align:left }
-aside .tags a { display: inline-block; font-weight: normal;
-	line-height: 1; margin-bottom: auto;
-	padding: 0.22222rem 0.44444rem;
-	position: relative;
-	text-align: center;
+aside .tags p.description { text-align:center }
+aside .tags a { display:inline-block; font-weight:normal; line-height:1; margin-bottom:0.3em;
+	padding:0.22222rem 0.44444rem; position:relative; text-align:center;
 	text-decoration: none; background-color: #e7e7e7; color: #333333 }
 aside .tags a:hover { color:#060 }
 
