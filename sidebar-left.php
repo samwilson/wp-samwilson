@@ -31,13 +31,13 @@
 	<li class="osm">
 		<h3>Mapping</h3>
 		<p>
-			I've been <a href="http://hdyc.neis-one.org/?Sam%20Wilson"></a>contributing</a>
-			to <a href="http://osm.org">OpenStreetMap</a> since 29 April 2008; my username is
-			<a rel="me" href="http://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">Sam&nbsp;Wilson</a>.
+			I've been <a href="http://hdyc.neis-one.org/?Sam%20Wilson">contributing</a>
+			to <a href="https://www.openstreetmap.org">OpenStreetMap</a> since 29 April 2008; my username is
+			<a rel="me" href="https://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">Sam&nbsp;Wilson</a>.
 			I'm currently living somewhere on this map:
 		</p>
-		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-			src="https://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629&amp;layer=mapnik"></iframe>
+		<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629&amp;layer=mapnik">
+		</iframe>
 	</li>
 
 	<li><h3>Categories</h3>
