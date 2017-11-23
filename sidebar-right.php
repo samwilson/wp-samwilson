@@ -53,10 +53,15 @@
 		?>
 	</li>
 
-	<?php wp_list_bookmarks( [
-		'title_li'         => 'Links',
-		'title_before'     => '<h3>',
-		'title_after'      => '</h3>',
-	] ); ?>
+	<li class="links">
+		<h3>Links</h3>
+		<ul>
+		<?php wp_list_bookmarks( [
+			'title_before'     => '<strong>',
+			'title_after'      => '</strong>',
+			'show_images' => false,
+		] ); ?>
+		</ul>
+	</li>
 
 </ol>
