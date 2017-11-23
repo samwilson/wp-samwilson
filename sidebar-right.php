@@ -33,7 +33,7 @@
 		<?php
 		$url = "https://photos.samwilson.id.au/ws.php?format=php&method=pwg.categories.getImages&per_page=5&order=random";
 		$response = wp_remote_get($url);
-		if ($response instanceof WP_Error) {
+		if ($response instanceof WP_Error || !is_serialized($response['body'])) {
 			echo '<p>[Error: Unable to retrieve photos at this time.]</p>';
 			$photos = [];
 		} else {
@@ -52,5 +52,11 @@
 		}
 		?>
 	</li>
+
+	<?php wp_list_bookmarks( [
+		'title_li'         => 'Links',
+		'title_before'     => '<h3>',
+		'title_after'      => '</h3>',
+	] ); ?>
 
 </ol>
