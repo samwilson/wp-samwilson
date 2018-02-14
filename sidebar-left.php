@@ -13,11 +13,11 @@
 		<p>I'm also on:
 		<a rel="me" href="https://en.wikisource.org/wiki/User:Samwilson" title="Username: Samwilson">Wikisource</a>,
 		<a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>,
-		<a rel="me" href="https://en.wikipedia.org/wiki/User:Samwilson" title="Username: Samwilson">Wikipedia</a>,
+		<a rel="me" href="https://www.wikidata.org/wiki/User:Samwilson" title="Username: Samwilson">Wikidata</a>,
 		<a rel="me" href="https://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">OpenStreetMap</a>,
-		<a href="http://stackexchange.com/users/35218" title="My profile on Stack Exchange">Stack Exchange</a>,
-		<a rel="me" href="https://twitter.com/samwilson" title="@samwilson">Twitter</a>, and
-		<a rel="me" href="http://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID</a>.
+		<a rel="me" href="https://stackexchange.com/users/35218" title="My profile on Stack Exchange">Stack Exchange</a>,
+		and
+		<a rel="me" href="https://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID</a>.
 		</p>
 	</li>
 

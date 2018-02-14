@@ -100,6 +100,7 @@ aside li { margin-bottom:2em }
 aside h3 { margin:0; background-color:#060; color:white; font-size:1.2em; padding:0.4em; margin-bottom:0.2em }
 aside .microblog h3 { margin:0 }
 aside .recent-photos { text-align:center }
+aside .recent-photos img { max-width:100% }
 aside dt { font-weight:normal; margin:0 }
 aside dd { margin:0 0 0 1em }
 aside ul { list-style-type:none; margin:0 }
@@ -225,9 +226,11 @@ body.single-format-image { background-color:black }
 article.format-image img { }
 
 
+article.category-status-updates.is-not-single,
 article.format-status.is-not-single { border-left:10px solid #060; padding-left:1em; color:#333;
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
+article.category-status-updates.is-not-single header,
 article.format-status.is-not-single header { background-color:white; padding:0 }
 article.format-status.is-not-single h2 { text-align:left; font-style:normal;
 	font-size:smaller; font-family:inherit }
