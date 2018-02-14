@@ -12,12 +12,15 @@
 		</p>
 		<p>I'm also on:
 		<a rel="me" href="https://en.wikisource.org/wiki/User:Samwilson" title="Username: Samwilson">Wikisource</a>,
-		<a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>,
 		<a rel="me" href="https://www.wikidata.org/wiki/User:Samwilson" title="Username: Samwilson">Wikidata</a>,
 		<a rel="me" href="https://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">OpenStreetMap</a>,
 		<a rel="me" href="https://stackexchange.com/users/35218" title="My profile on Stack Exchange">Stack Exchange</a>,
+		<a rel="me" href="https://www.reddit.com/user/freosam" title="u/freosam">Reddit</a>,
+		<a rel="me" href="https://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID</a>,
+		<a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>,
+		<a rel="me" href="https://profiles.wordpress.org/samwilson" title="Username: samwilson">WordPress</a>,
 		and
-		<a rel="me" href="https://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID</a>.
+		<a rel="me" href="https://www.mediawiki.org/wiki/User:Samwilson" title="Username: Samwilson">MediaWiki</a>.
 		</p>
 	</li>
 
