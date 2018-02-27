@@ -18,7 +18,7 @@
 				[
 					'taxonomy' => 'category',
 					'field' => 'slug',
-					'terms' => [ 'status-updates' ]
+					'terms' => [ 'statuses' ]
 				],
 			]
 		];
