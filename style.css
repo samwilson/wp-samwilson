@@ -226,25 +226,25 @@ body.single-format-image { background-color:black }
 article.format-image img { }
 
 
-article.category-status-updates.is-not-single,
+article.category-statuses.is-not-single,
 article.format-status.is-not-single { border-left:10px solid #060; padding-left:1em; color:#333;
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
-article.category-status-updates.is-not-single header,
+article.category-statuses.is-not-single header,
 article.format-status.is-not-single header { background-color:white; padding:0 }
-article.category-status-updates.is-not-single h2,
+article.category-statuses.is-not-single h2,
 article.format-status.is-not-single h2 { text-align:left; font-style:normal; font-size:smaller; font-family:inherit }
-article.category-status-updates.is-not-single h2 a,
+article.category-statuses.is-not-single h2 a,
 article.format-status.is-not-single h2 a { color:#ddd }
-article.category-status-updates.is-not-single:hover h2 a,
+article.category-statuses.is-not-single:hover h2 a,
 article.format-status.is-not-single:hover h2 a { color:#060; text-decoration:none }
-article.category-status-updates.is-not-single .header-bottom,
+article.category-statuses.is-not-single .header-bottom,
 article.format-status.is-not-single .header-bottom { display:none }
-article.category-status-updates.is-not-single .category,
+article.category-statuses.is-not-single .category,
 article.format-status.is-not-single .category { display:none }
-article.category-status-updates.is-not-single .info,
+article.category-statuses.is-not-single .info,
 article.format-status.is-not-single .info { display:none }
-article.category-status-updates.is-not-single p,
+article.category-statuses.is-not-single p,
 article.format-status.is-not-single p { margin:0 }
 
 nav.navigation.pagination { text-align:center }
