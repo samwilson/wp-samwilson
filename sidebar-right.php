@@ -3,19 +3,25 @@
 	<li class="microblog">
 		<h3>Microblog</h3>
 		<?php
-		$args = array(
+		$args = [
 			'posts_per_page' => 5,
 			'post_type'=> 'post',
 			'post_status' => 'publish',
 			'order' => 'DESC',
-			'tax_query' => array(
-				array(
+			'tax_query' => [
+				'relation' => 'OR',
+				[
 					'taxonomy' => 'post_format',
 					'field' => 'slug',
-					'terms' => array( 'post-format-status' )
-				)
-			)
-		);
+					'terms' => [ 'post-format-status' ]
+				],
+				[
+					'taxonomy' => 'category',
+					'field' => 'slug',
+					'terms' => [ 'status-updates' ]
+				],
+			]
+		];
 		$my_query = new WP_Query($args);
 		if( $my_query->have_posts() ): while ($my_query->have_posts()) : $my_query->the_post(); ?>
 			<a href="<?php the_permalink() ?>#post" <?php post_class('anchor-list') ?>>

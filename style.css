@@ -232,13 +232,19 @@ article.format-status.is-not-single { border-left:10px solid #060; padding-left:
 }
 article.category-status-updates.is-not-single header,
 article.format-status.is-not-single header { background-color:white; padding:0 }
-article.format-status.is-not-single h2 { text-align:left; font-style:normal;
-	font-size:smaller; font-family:inherit }
+article.category-status-updates.is-not-single h2,
+article.format-status.is-not-single h2 { text-align:left; font-style:normal; font-size:smaller; font-family:inherit }
+article.category-status-updates.is-not-single h2 a,
 article.format-status.is-not-single h2 a { color:#ddd }
+article.category-status-updates.is-not-single:hover h2 a,
 article.format-status.is-not-single:hover h2 a { color:#060; text-decoration:none }
+article.category-status-updates.is-not-single .header-bottom,
 article.format-status.is-not-single .header-bottom { display:none }
+article.category-status-updates.is-not-single .category,
 article.format-status.is-not-single .category { display:none }
+article.category-status-updates.is-not-single .info,
 article.format-status.is-not-single .info { display:none }
+article.category-status-updates.is-not-single p,
 article.format-status.is-not-single p { margin:0 }
 
 nav.navigation.pagination { text-align:center }
